@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Machine Learning</title>
+<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			margin:0;padding:0;
+			background:url({{url_for('static',filename='images/parkinsondisease.jpg')}}) no-repeat center center fixed;
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+		}
+		h3{
+			text-align:center;
+			color:white;
+		}
+		.main{
+			margin-top:100px;
+		}
+		p{
+			color:white;
+			text-indent:10px;
+			margin:10px;
+			font-size:20px;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="bg">
+	<nav class="navbar navbar-expand-sm bg-light opacity-3 rounded-pill" id="navv">
+      <div class="container">
+      <ul class="navbar-nav">
+    <li class="nav-item ">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('information')}}">Info</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('test')}}">Predict</a>
+    </li>
+	</ul>
+      </div>
+    </nav>
+	<br>
+	<h3>Detecting Parkinson Disease using ML </h3>
+	<div class="container main">
+	<p><b>Parkinson's disease</b> is a brain disorder that leads to shaking, stiffness, and difficulty with walking, balance, and coordination. Parkinson's symptoms usually begin gradually and get worse over time. As the disease progresses, people may have difficulty walking and talking.</p>
+	<p><b>Symptoms:</b> Bradykinesia; Constipation; Fatigue...</p>
+	<p><b>Treatments:</b> Deep brain stimulation; L-DOPA</p>
+	</div>
+</div>
+</body>
+</html>
